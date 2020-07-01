@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AbdulRasol Coder</title>
+	<!--<style>
+		@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+	</style>-->
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="css/style4.css" />
+</head>
+<body style="height: 20000px">
+	<nav class="nav">
+		<div class="logo-container">
+			<span class="logo">AbdulRasol <span>Al-Hilo</span></span> 
+		</div>
+	</nav>
+	<div class="navbar-container">
+		<div class="navbar">
+			<div class="navbar-control uk-grid-small" uk-grid>
+				<div class="uk-width-auto ">
+					<span id="mobile-nav-btn" class="uk-icon" uk-icon="icon:chevron-up;ratio :3">
+					</span>
+				</div>
+				<div class="text">
+					<span>
+						Dot.IT
+					</span>
+				</div>
+			</div>
+			<div class="navbar-list">
+				<ul class="uk-list">
+					<li data-id="home" class="uk-padding-small active">Home</li>
+					<li data-id="about-me" class="uk-padding-small">About Me</li>
+					<li data-id="servies" class="uk-padding-small">Servies</li>
+					<li data-id="portfolio" class="uk-padding-small">Portfolio</li>
+					<li data-id="deploy-me" class="uk-padding-small">Deploy Me</li>
+					<li data-id="contact-me" class="uk-padding-small">Contact Me</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id='home' class="uk-padding">
+		<div class="uk-container">
+			<div class="uk-flex uk-flex-center uk-flex-middle center-s" uk-grid>
+				<div class="feature uk-width-1-3@s ">
+					<h3 class="">Cheap</h3>
+					<p>
+						Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+					</p>
+				</div>
+				<div class="feature uk-width-1-3@s">
+					<h3>Cheap</h3>
+					<p>
+						Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+					</p>
+				</div>
+				<div class="feature uk-width-1-3@s">
+					<h3>Cheap</h3>
+					<p>
+						Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="about-me" class="about-me">
+		<div class="uk-container">
+			<div class="uk-flex uk-flex-middle uk-flex-center uk-child-width-auto@s" uk-grid>
+				<div class="about-img">
+					<img class="uk-border-circle" src="images/logo.jpg" alt="abdulrasol">
+				</div>
+				<div class="about-name uk-text-center">
+					<h2 class="uk-margin-small">AbdulRasol S. Al-Hilo</h2>
+					<h3 class="uk-margin-small">Full Stack Developer</h3>
+					<div class="uk-width-1-1 uk-text-center uk-margin-top">
+						<span id="move-to-skills" class="uk-icon-button  uk-margin-small-right" uk-icon="icon:chevron-down">
+						</span>	
+					</div>
+				</div>
+			</div>
+
+			<div id="skills" class="skills uk-flex uk-flex-middle uk-flex-center uk-child-width-1-2@s" uk-grid>
+				<div class="skill">
+					<p>html & css</p>
+					<div class="skill-bar uk-box-shadow-medium">
+						<span class="prec uk-display-block">90%</span>
+					</div>
+				</div>
+				<div class="skill">
+					<p>JS & jQuery</p>
+					<div class="skill-bar uk-box-shadow-medium">
+						<span class="prec uk-display-block">80%</span>
+					</div>
+				</div>
+				<div class="skill">
+					<p>Python</p>
+					<div class="skill-bar uk-box-shadow-medium">
+						<span class="prec uk-display-block">80%</span>
+					</div>
+				</div>
+				<div class="skill">
+					<p>Django Framework</p>
+					<div class="skill-bar uk-box-shadow-medium">
+						<span class="prec uk-display-block">90%</span>
+					</div>
+				</div>
+			</div>
+			<div class="uk-flex uk-flex-middle uk-flex-center cv">
+				<button class="uk-box-shadow-small">
+					Download CV
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="servies" class="servies">
+		<div class="uk-container">
+			<div class="uk-text-center">
+				<div class="uk-flex uk-flex-center" uk-grid>
+					<div class="serv">
+						<h2>Designs</h2>
+						<h4>Website & Graphics Design</h4>
+						<div class="img-container">
+							<img src="images/servies/01.png">
+						</div>
+					</div>
+					<div class="serv">
+						<h2>Websites</h2>
+						<h4>Website Coding for all Purpose</h4>
+						<div class="img-container">
+							<img src="images/servies/05.jpg">
+						</div>
+					</div>
+
+					<div class="serv">
+						<h2>Online Marketing</h2>
+						<h4>Social Media Advertising</h4>
+						<div class="img-container">
+							<img src="images/servies/07.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="portfolio" class="port">
+		<div class="uk-container">
+			<h2>My Works</h2>
+			<div id='shuflle'>
+				<ul class="filter-tags">
+					<li data-filter="all" class="active" uk-filter-control>All</li>
+					<li data-filter="tag-web">Web Development</li>
+					<li data-filter="tag-design">Graphics Design</li>
+					<li data-filter="tag-ads">Others</li>
+				</ul>
+				<ul class="filter uk-flex uk-flex-center uk-child-width-auto@s uk-text-center" uk-grid>
+					<li filter="tag-web" class="tag-web">
+						<div class="item">
+							
+							<img src="images/01.jpg" alt="Img">
+						</div>
+					</li>
+					<li filter="tag-web" class="tag-web">
+						<div class="item">
+							
+							<img src="images/01.jpg" alt="Img">
+						</div>
+					</li>
+					<li filter="tag-design" class="tag-design">
+						<div class="item">
+							
+							<img src="images/01.jpg" alt="Img">
+						</div>
+					</li>
+					<li filter="tag-ads" class="tag-ads">
+						<div class="item">
+
+							<img src="images/01.jpg" alt="Img">
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/plugin4.js"></script>
+
+</body>
+</html>

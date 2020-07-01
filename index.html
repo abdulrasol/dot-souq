@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Souq</title>
+    <!--<style>
+		@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+	</style>-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="account-bar">
+      <div class="uk-container">
+        <div class="uk-text-right">
+          <a class="">
+            Login
+          </a>
+          <a class="">
+            Logout
+          </a>
+          <a class="">
+            My Account
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-search-box">
+      <div class="uk-container">
+        <div
+          class="uk-grid-small uk-text-center uk-flex uk-flex-center uk-flex-middle"
+          uk-grid
+        >
+          <div class="uk-width-1-5@m">
+            <div class="logo-box">
+              <span>Sou<span>Q</span></span>
+            </div>
+          </div>
+          <div class="uk-width-1-2@m">
+            <div class="search-box">
+              <form action="">
+                <div
+                  class="uk-grid uk-flex uk-flex-center uk-flex-middle"
+                  uk-grid
+                >
+                  <div class="uk-width-expand">
+                    <input
+                      type="search"
+                      name=""
+                      placeholder="Search..."
+                      id=""
+                    />
+                  </div>
+                  <div class="uk-width-1-4">
+                    <button type="submit">
+                      <span
+                        class="uk-icon"
+                        uk-icon="icon:search;ratio:1.2"
+                      ></span>
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="uk-width-1-5@m">
+            <div
+              class="user-item uk-child-width-1-3 uk-flex uk-flex-center"
+              uk-grid
+            >
+              <a class="uk-width-auto" href="">
+                <span class="badge">3</span>
+                <span uk-icon="heart"></span>
+                <span>Wishlist</span>
+              </a>
+              <a class="uk-width-auto" href="">
+                <span class="badge">3</span>
+                <span uk-icon="cart"></span>
+                <span>Cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="uk-container">
+        <ul>
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="">Hot Deals</a></li>
+          <li><a href="">Most Buy</a></li>
+          <li><a href="">Cloths</a></li>
+          <li><a href="">Makeup</a></li>
+          <li><a href="">Categories</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="featured-category">
+      <div class="uk-container">
+        <h3>Save More</h3>
+        <div uk-slider="autoplay: true; autoplay-interval:3000;finite: false">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-dark"
+            tabindex="-1"
+          >
+            <ul
+              class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid"
+            >
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product01.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Macbook Pro</h3>
+                      <span>Apple</span>
+                      <p>
+                        <span class="new-price">999$</span>
+                        <span class="old-price">1200$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product08.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Qames</h3>
+                      <span>Alpa</span>
+                      <p>
+                        <span class="new-price">80$</span>
+                        <span class="old-price">99$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product03.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Macbook</h3>
+                      <span>Apple</span>
+                      <p>
+                        <span class="new-price">550$</span>
+                        <span class="old-price">599$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product07.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Jeans cuton</h3>
+                      <span>Altr</span>
+                      <p>
+                        <span class="new-price">49$</span>
+                        <span class="old-price">59$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product04.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Android Tablet</h3>
+                      <span>Sony</span>
+                      <p>
+                        <span class="new-price">230$</span>
+                        <span class="old-price">359$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product02.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Galaxy S5</h3>
+                      <span>Samsung</span>
+                      <p>
+                        <span class="new-price">229$</span>
+                        <span class="old-price">299$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product06.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Weman Janta</h3>
+                      <span>Haklo</span>
+                      <p>
+                        <span class="new-price">70$</span>
+                        <span class="old-price">79$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product05.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Sony Headphone</h3>
+                      <span>Sony</span>
+                      <p>
+                        <span class="new-price">99$</span>
+                        <span class="old-price">130$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="#"
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="#"
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-category">
+      <div class="uk-container">
+        <h3>Top Selling</h3>
+        <div uk-slider="autoplay: true; autoplay-interval:3500;finite: false">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-dark"
+            tabindex="-1"
+          >
+            <ul
+              class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid"
+            >
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product03.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Macbook</h3>
+                      <span>Apple</span>
+                      <p>
+                        <span class="new-price">550$</span>
+                        <span class="old-price">599$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product07.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Jeans cuton</h3>
+                      <span>Altr</span>
+                      <p>
+                        <span class="new-price">49$</span>
+                        <span class="old-price">59$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product02.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Galaxy S5</h3>
+                      <span>Samsung</span>
+                      <p>
+                        <span class="new-price">229$</span>
+                        <span class="old-price">299$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product06.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Weman Janta</h3>
+                      <span>Haklo</span>
+                      <p>
+                        <span class="new-price">70$</span>
+                        <span class="old-price">79$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product05.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Sony Headphone</h3>
+                      <span>Sony</span>
+                      <p>
+                        <span class="new-price">99$</span>
+                        <span class="old-price">130$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="#"
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="#"
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured-category">
+      <div class="uk-container">
+        <h3>New Products</h3>
+        <div uk-slider="autoplay: true; autoplay-interval:3200;finite: false">
+          <div
+            class="uk-position-relative uk-visible-toggle uk-dark"
+            tabindex="-1"
+          >
+            <ul
+              class="uk-slider-items uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid"
+            >
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product01.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Macbook Pro</h3>
+                      <span>Apple</span>
+                      <p>
+                        <span class="new-price">999$</span>
+                        <span class="old-price">1200$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product08.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Qames</h3>
+                      <span>Alpa</span>
+                      <p>
+                        <span class="new-price">80$</span>
+                        <span class="old-price">99$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product03.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Macbook</h3>
+                      <span>Apple</span>
+                      <p>
+                        <span class="new-price">550$</span>
+                        <span class="old-price">599$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product07.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Jeans cuton</h3>
+                      <span>Altr</span>
+                      <p>
+                        <span class="new-price">49$</span>
+                        <span class="old-price">59$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product04.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Android Tablet</h3>
+                      <span>Sony</span>
+                      <p>
+                        <span class="new-price">230$</span>
+                        <span class="old-price">359$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product02.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Galaxy S5</h3>
+                      <span>Samsung</span>
+                      <p>
+                        <span class="new-price">229$</span>
+                        <span class="old-price">299$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product06.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Weman Janta</h3>
+                      <span>Haklo</span>
+                      <p>
+                        <span class="new-price">70$</span>
+                        <span class="old-price">79$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-card">
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                      <img src="images/product05.png" alt="" />
+                    </div>
+                    <div class="uk-card-body">
+                      <h3 class="uk-card-title">Sony Headphone</h3>
+                      <span>Sony</span>
+                      <p>
+                        <span class="new-price">99$</span>
+                        <span class="old-price">130$</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    Add to Cart <span uk-icon="icon: cart; ratio:1.5"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a
+              class="uk-position-center-left uk-position-small uk-hidden-hover"
+              href="#"
+              uk-slidenav-previous
+              uk-slider-item="previous"
+            ></a>
+            <a
+              class="uk-position-center-right uk-position-small uk-hidden-hover"
+              href="#"
+              uk-slidenav-next
+              uk-slider-item="next"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-categories">
+      <div class="uk-container">
+        <h2>
+          Categories
+        </h2>
+        <div
+          class="uk-grid-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s"
+          uk-grid
+        >
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="category-card">
+              <a class="uk-link-reset" href="">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img
+                      class=""
+                      width="50"
+                      height="50"
+                      src="images/logo.jpg"
+                    />
+                  </div>
+                  <div class="uk-width-expand">
+                    <span>Category</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe">
+      <div class="uk-container">
+        <div class="uk-flex uk-flex-middle uk-flex-center" uk-grid>
+          <div class="newsletters uk-text-center uk-width-1-1">
+            <p>Sign Up for the <span>NEWSLETTER</span></p>
+            <form
+              class="uk-flex uk-flex-center uk-width-3-5@l uk-width-3-4@m uk-width-1-1@s uk-margin-auto"
+              action=""
+              uk-grid
+            >
+              <div class="uk-grid-collapse uk-width-expand@s" uk-grid>
+                <div class="uk-width-expand">
+                  <input
+                    class="uk-width-expand"
+                    type="search"
+                    placeholder="Enter your email"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="uk-width-auto">
+                  <button>
+                    <span uk-icon="icon: mail;ratio:1.2"></span>
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="icons uk-width-auto@s">
+            <a
+              href=""
+              class="uk-icon-link"
+              uk-icon="icon: facebook; ratio:1"
+            ></a>
+            <a
+              href=""
+              class="uk-icon-link"
+              uk-icon="icon: instagram; ratio:1"
+            ></a>
+            <a
+              href=""
+              class="uk-icon-link"
+              uk-icon="icon: youtube; ratio:1"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <footer class="uk-container">
+        <div class="uk-child-width-1-2@s" uk-grid>
+          <div>
+            <h3>About us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut.
+            </p>
+            <a class="uk-link-muted uk-display-block" href="tel:+9647700000000">
+              <span uk-icon="icon: receiver"></span> +964 770 000 0000
+            </a>
+            <a
+              class="uk-link-muted uk-display-block"
+              href="mailto:info@souq.com"
+            >
+              <span uk-icon="icon: mail"></span> info@souq.com
+            </a>
+            <a class="uk-link-muted uk-display-block" href="">
+              <span uk-icon="icon: location"></span> Country, City, 123 px
+            </a>
+          </div>
+          <div>
+            <h3>Information</h3>
+            <div class="uk-child-width-auto" uk-grid>
+              <div>
+                <a class="uk-link-muted uk-display-block" href="#"
+                  >Privacy Policy</a
+                >
+                <a class="uk-link-muted uk-display-block" href="#"
+                  >Terms & Conditions</a
+                >
+              </div>
+              <div>
+                <a class="uk-link-muted uk-display-block" href="#"
+                  >Privacy Policy</a
+                >
+                <a class="uk-link-muted uk-display-block" href="#"
+                  >Terms & Conditions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        Copyright ©2020 All rights reserved | This template is made with love by
+        Dot.IT
+      </div>
+    </div>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/plugin.js"></script>
+  </body>
+</html>

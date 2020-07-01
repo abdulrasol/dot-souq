@@ -1,0 +1,408 @@
+* {
+	/*font-family: 'Almarai', sans-serif;*/
+	box-sizing: border-box;
+}
+
+:root {
+	--color-1: #162447;
+	--color-2: #1f4068;
+	--color-3: #1b1b2f;
+	--color-4: #e43f5a;
+	--color-g: #d4d4d4;
+	--color-w: #fbfbfb;
+}
+
+.account-bar {
+	background-color: var(--color-1);
+	padding: 5px 0;
+}
+
+.account-bar a {
+	padding-left: 15px;
+	color: var(--color-g)
+}
+
+.account-bar a:hover {
+	color: var(--color-4);
+	text-decoration: none;
+}
+
+/**/
+.logo-search-box {
+	padding: 20px 0;
+	background-color: var(--color-2);
+	color: var(--color-4);
+	border-bottom: 2px solid var(--color-4);
+}
+
+.logo-search-box div:nth-child(2) {
+	margin: 15px 0;
+}
+
+.logo-search-box .logo-box {
+	font-size: 2em;
+}
+
+.logo-search-box .logo-box>span {
+	font-style: italic;
+	font-weight: 500;
+	font-family: fantasy;
+}
+
+.logo-search-box .logo-box>span span {
+	color: #fff;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.logo-search-box .search-box form>div {
+	border-radius: 20px;
+	margin: 0;
+}
+
+.logo-search-box .search-box form>div div {
+	margin: 0;
+	padding: 0;
+}
+
+.logo-search-box .search-box form input,
+.logo-search-box .search-box form button {
+	margin-top: 0;
+	border: none;
+	font-weight: bold;
+	background-color: #fbfbfb;
+	padding: 10px 20px;
+	display: block;
+	height: 45px;
+	width: 100%;
+	color: var(--color-1);
+}
+
+.logo-search-box .search-box form input {
+	background-color: var(--color-w);
+	border-top-left-radius: 22.5px;
+	border-bottom-left-radius: 22.5px
+}
+
+.logo-search-box .search-box form button {
+
+	background-color: var(--color-4);
+	border-top-right-radius: 22.5px;
+	border-bottom-right-radius: 22.5px;
+}
+
+.logo-search-box .user-item a {
+	position: relative;
+	display: block;
+	width: 80px;
+	color: var(--color-g);
+}
+
+.logo-search-box .user-item a span {
+	display: block;
+}
+
+.logo-search-box .user-item a .badge {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	color: var(--color-g);
+	background-color: var(--color-4);
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+
+}
+
+@media (min-width:1200px) {
+	.logo-search-box .user-item a .badge {
+		right: -14px;
+	}
+}
+
+/**/
+.navbar {
+	background-color: var(--color-w);
+	padding: 15px;
+	border-bottom: 2px solid var(--color-g);
+}
+
+.navbar ul {
+	list-style: none;
+	font-weight: normal;
+}
+
+.navbar ul li {
+	display: inline-block;
+	padding-right: 20px;
+	font-family: Almarai-bold;
+	font-weight: bolder;
+}
+
+.navbar ul li.active::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: var(--color-4);
+}
+
+.navbar ul li a {
+	color: var(--color-1);
+	transition: all .3s ease-in-out;
+}
+
+.navbar ul li.active a {
+	color: var(--color-4);
+}
+
+.navbar ul li a::after {
+	content: "";
+	display: block;
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-4);
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.navbar ul li a:hover:after {
+	width: 100%;
+}
+
+
+
+.navbar ul li a:hover {
+	text-decoration: none;
+	color: var(--color-4);
+}
+
+
+/**/
+
+div.navbar+div.featured-category {
+	padding-top: 40px;
+}
+
+.featured-category {
+	padding: 20px 0 0 0;
+}
+
+
+.item-card {
+	position: relative;
+}
+
+.item-card .uk-card {
+	border: 2px solid #7c7a7a66;
+	border-radius: 5px;
+	margin-bottom: 55px;
+	transition: all .1s ease-in-out;
+	z-index: 2;
+}
+
+.item-card .uk-card:hover {
+	border: 2px solid #686767
+}
+
+.item-card .uk-card .uk-card-body h3 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.item-card .uk-card .uk-card-body p {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.item-card .uk-card .uk-card-body p span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.item-card .uk-card .uk-card-body span.new-price {
+	font-weight: bolder;
+	font-size: 2em;
+	color: var(--color-3);
+}
+
+.item-card .uk-card .uk-card-body span.old-price {
+	text-decoration: line-through;
+}
+
+.item-card .add-to-cart {
+	z-index: 1;
+	background-color: var(--color-4);
+	font-weight: bold;
+	color: var(--color-1);
+	border: none;
+	font-size: 1.2em;
+	padding: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: absolute;
+	cursor: pointer;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	transition: all .5s;
+}
+
+
+.item-card:hover .add-to-cart {
+	bottom: -50px;
+}
+
+/**/
+.main-categories {
+	border-bottom: 2px solid var(--color-g);
+	padding: 40px 0;
+
+}
+
+.main-categories h2 {
+	color: var(--color-w);
+}
+
+.category-card {
+	border: 1px solid var(--color-g);
+	color: var(--color-1);
+}
+
+
+.category-card a {
+	color: inherit;
+}
+
+.category-card div span {
+	font-size: 1.5em;
+}
+
+/**/
+.subscribe {
+	padding: 40px 0;
+	position: relative;
+	background-color: var(--color-w);
+	color: var(--color-1);
+}
+
+.subscribe p {
+	font-size: 1.5em;
+}
+
+.subscribe p span {
+	font-weight: bolder;
+}
+
+.subscribe form input,
+.subscribe form button {
+	margin-top: 0;
+	border: none;
+	font-weight: bold;
+	background-color: #fbfbfb;
+	padding: 10px 20px;
+	display: block;
+	height: 45px;
+	color: var(--color-w);
+
+
+}
+
+.subscribe form input {
+	background-color: var(--color-1);
+	border-top-left-radius: 22.5px;
+	border-bottom-left-radius: 22.5px;
+}
+
+.subscribe form button {
+	background-color: var(--color-4);
+	border-top-right-radius: 22.5px;
+	border-bottom-right-radius: 22.5px;
+}
+
+.subscribe .icons {
+	text-align: center;
+}
+
+.subscribe .icons a {
+	display: inline-block;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid var(--color-g);
+	color: var(--color-2);
+}
+
+
+/**/
+.footer {
+	background-color: var(--color-3);
+	padding-top: 40px;
+}
+
+.footer a {
+	padding: 5px 0;
+}
+
+.footer a span::after {
+	content: '';
+	padding-right: 20px;
+}
+
+.footer .copyright {
+	margin-top: 40px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	background-color: var(--color-1);
+}
+
+/**/
+/*
+@media (min-width: 576px) {
+	.category-card {
+		width: 48%;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.category-card {
+		width: 50%;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.category-card {
+		width: 32%;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.category-card {
+		width: 24%;
+	}
+}
+*/
+/**/
+
+@font-face {
+	font-family: Almarai;
+	src: url('../fonts/Almarai-Regular.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Almarai-bold;
+	src: url('../fonts/Almarai-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Almarai-bolder;
+	src: url('../fonts/Almarai-ExtraBold.ttf');
+	font-weight: bolder;
+}
